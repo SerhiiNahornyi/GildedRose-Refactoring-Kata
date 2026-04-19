@@ -10,7 +10,8 @@ class GildedRose {
     private static final Map<String, ItemUpdater> UPDATERS = Map.of(
         "Aged Brie", new AgedBrieUpdater(),
         "Sulfuras", new SulfurasUpdater(),
-        "Backstage passes", new BackstagePassUpdater()
+        "Backstage passes", new BackstagePassUpdater(),
+        "Conjured", new ConjuredUpdater()
     );
 
     public GildedRose(List<Item> items) {

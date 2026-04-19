@@ -71,4 +71,16 @@ class GildedRoseTest {
         assertEquals(10, item.sellIn);
         assertEquals(80, item.quality);
     }
+
+    @Test
+    void conjured_usesCorrectUpdater() {
+        Item item = updateItem("Conjured Mana Cake", 10, 20);
+        assertEquals(18, item.quality);
+    }
+
+    @Test
+    void conjured_matchesByPrefix() {
+        Item item = updateItem("Conjured Dark Staff", 10, 20);
+        assertEquals(18, item.quality);
+    }
 }
