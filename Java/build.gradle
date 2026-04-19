@@ -19,9 +19,3 @@ sourceCompatibility = '21'
 test {
     useJUnitPlatform()
 }
-
-task texttest(type: JavaExec) {
-    main = "com.gildedrose.TexttestFixture"
-    classpath = sourceSets.test.runtimeClasspath
-    args "30"
-}
